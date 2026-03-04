@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- トップページ -->
+  <url>
+    <loc>https://yurato-design.github.io/corporate-site/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ニュース一覧 -->
+  <url>
+    <loc>https://yurato-design.github.io/corporate-site/news.html</loc>
+  </url>
+
+  <!-- 会社概要 -->
+  <url>
+    <loc>https://yurato-design.github.io/corporate-site/company.html</loc>
+  </url>
+
+  <!-- 404ページ -->
+  <url>
+    <loc>https://yurato-design.github.io/corporate-site/404.html</loc>
+  </url>
+
+</urlset>

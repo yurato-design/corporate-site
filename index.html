@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ページ説明 -->
+    <meta name="description" content="株式会社Sensの公式サイト。サービス紹介、ニュース、会社概要を掲載。">
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- メインCSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="images/favicon.svg">
+
+
+    <!--   OGP設定（SNSシェア時に表示される情報）   -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yurato-design.github.io/corporate-site/">
+    <meta property="og:site_name" content="株式会社Sens">
+    <meta property="og:title" content="株式会社Sens - 公式サイト">
+    <meta property="og:description" content="株式会社Sens公式サイト。事業内容、ニュース、会社概要などを掲載。">
+    <meta property="og:image" content="https://yurato-design.github.io/corporate-site/images/ogp.png">
+
+    <!--    ページタイトル    -->
+    <title>株式会社Sens｜公式サイト</title>
+  </head>
+
+  <body>
+
+    <!-- ================================
+      ヘッダー
+    ================================ -->
+    <header class="header">
+      <div class="header-inner">
+
+        <!-- ロゴ -->
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="株式会社Sens">
+          </a>
+        </h1>
+
+        <!-- ハンバーガーメニュー（CSSで開閉） -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+
+        <!-- ナビゲーション -->
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">TOPページ</a></li>
+            <li><a href="news.html">ニュースリリース</a></li>
+            <li><a href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- ================================
+      カバーエリア（背景画像 + テキスト画像）
+    ================================ -->
+    <section class="cover-area">
+      <div class="cover-inner">
+        <img src="images/cover_read.png" alt="新時代のソリューションを提供する">
+      </div>
+    </section>
+
+    <!-- ================================
+      サービス紹介（3カラム）
+    ================================ -->
+    <section class="service-area">
+      <div class="service-container">
+
+        <div class="service-box">
+          <img src="images/service_01.jpg" alt="スマホアプリ開発サービス">
+          <h3>スマホアプリ開発サービス</h3>
+          <p>
+            弊社では、お客様のさらなる販路拡大、認知度向上のためのスマホアプリ開発を行っております。
+            独自に開発したシステム「brain gate」を利用し、素早くお客様のご要望にお応えします。
+          </p>
+        </div>
+
+        <div class="service-box">
+          <img src="images/service_02.jpg" alt="Webソリューションの開発">
+          <h3>Webソリューションの開発</h3>
+          <p>
+            ruby on railsやJavaを利用したウェブソリューションの開発を行っております。
+            ITの最先端を常に学習し、お客様のニーズにお応えいたします。
+          </p>
+        </div>
+
+        <div class="service-box">
+          <img src="images/service_03.jpg" alt="会社概要">
+          <h3>会社概要</h3>
+          <p>
+            弊社は2010年に設立し、より豊かな暮らしを皆様に提供することを目標に成長を続けております。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================
+      NEWS
+    ================================ -->
+    <section class="news-area">
+      <h2 class="news-title">NEWS</h2>
+
+      <ul class="news-list">
+        <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>
+        <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>
+        <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>
+        <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>
+        <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>
+      </ul>
+    </section>
+
+    <!-- ================================
+      Google Map（iframe版）
+    ================================ -->
+    <section class="map-area">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=..."
+        width="100%"
+        height="400"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- ================================
+      フッター
+    ================================ -->
+    <footer class="footer">
+      <div class="footer-inner">
+
+        <img src="images/footer_logo.png" alt="株式会社Sens">
+
+        <address>
+          〒000-0000<br>
+          東京都○○区○○町 560-0-0<br>
+          03-0000-0000<br>
+          info@xxxxxx.com
+        </address>
+
+        <ul class="footer-nav">
+          <li><a href="index.html">TOPページ</a></li>
+          <li><a href="news.html">ニュースリリース</a></li>
+          <li><a href="company.html">会社概要</a></li>
+        </ul>
+
+      </div>
+
+      <p class="copy">copyright (C) 株式会社Sens all rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
