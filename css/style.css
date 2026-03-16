@@ -1,0 +1,377 @@
+/* --------------------------------
+   基本設定
+-------------------------------- */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.8;
+  background: #fff;
+}
+
+/* 画像 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* セクション共通 */
+section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* --------------------------------
+   ヘッダー
+-------------------------------- */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 180px;
+}
+
+/* --------------------------------
+   PCナビ
+-------------------------------- */
+.nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.nav a:hover {
+  color: #2c7fb8;
+}
+
+/* --------------------------------
+   ハンバーガーメニュー（SP）
+-------------------------------- */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;   /* ← 右上に配置 */
+  top: 30px;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #333;
+  height: 3px;
+  width: 28px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+/* SP表示 */
+@media (max-width: 768px) {
+
+  .nav ul {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0;        /* ← メニューも右側に出す */
+    left: auto;
+    width: 220px;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    display: none;
+    text-align: left;
+  }
+
+  .nav-toggle-label {
+    display: block;
+  }
+
+  /* チェックが入ったら表示 */
+  .nav-toggle:checked + .nav-toggle-label + .nav ul {
+    display: block;
+  }
+}
+
+/* --------------------------------
+   カバーエリア
+-------------------------------- */
+.cover-area {
+  background: url("../images/cover.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.cover-inner img {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --------------------------------
+   サービス
+-------------------------------- */
+.service-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.service-box h3 {
+  font-size: 2rem;
+  margin-top: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.service-box img{
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+}
+
+.service-box p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .service-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* --------------------------------
+   NEWS（トップ）
+-------------------------------- */
+.news-area {
+  background: #f5f8fa;
+}
+
+.news-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+
+.news-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-list li {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.news-list span {
+  color: #2c7fb8;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+/* --------------------------------
+   NEWS一覧ページ
+-------------------------------- */
+.news-list li {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+/* --------------------------------
+   会社概要
+-------------------------------- */
+.company-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.company-table th,
+.company-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.6rem;
+}
+
+.company-table th {
+  width: 30%;
+  font-weight: 700;
+  background: #f9f9f9;
+}
+
+/* --------------------------------
+   サブカバー
+-------------------------------- */
+.sub-cover {
+  background: url("../images/sub_cover.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sub-cover h2 {
+  font-size: 3rem;
+  color: darkblue;
+  font-weight: 700;
+}
+
+/* --------------------------------
+   Google Map
+-------------------------------- */
+.map-area iframe {
+  width: 100%;
+  border: none;
+}
+
+/* --------------------------------
+   フッター
+-------------------------------- */
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-inner img{
+  max-width: 100%;
+  height: 6vh;
+  display: block;
+}
+
+.footer-nav li {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #2c7fb8;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer{
+    padding: 40px 0px 10px;
+  }
+  .footer-inner{
+    display: block;
+    text-align: center;
+  }
+  .footer-inner img{
+    margin: 0px auto 10px;
+  }
+  .footer-nav{
+    margin: 20px 0px;
+  }
+  .footer-nav li{
+    background-color: white;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+  }
+  .footer-nav li a{
+    color: #555;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.btn-404 {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #121212;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-404:hover {
+  opacity: 0.8;
+}
